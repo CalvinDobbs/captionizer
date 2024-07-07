@@ -1,0 +1,6 @@
+tabWidth: 4
+useTabs": false
+overrides:
+    - files: "*.html"
+      options:
+          printWidth: 5000

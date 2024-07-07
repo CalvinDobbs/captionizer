@@ -1,0 +1,15 @@
+services:
+    app:
+        build:
+            dockerfile: Dockerfile
+        ports:
+            - ${PORT:-3000}:3000
+        env_file:
+            - .env
+        develop:
+            watch:
+                - action: sync
+                  path: ./web
+                  target: /app/web
+                - action: rebuild
+                  path: package.json
