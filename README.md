@@ -23,8 +23,8 @@ Next, make a Replicate account and grab your API token [replicate.com/account](h
 Create a file called `.env` in the root project directory and set the following environment variables:
 
 ```console
-export REPLICATE_API_TOKEN=... (required)
-export PORT=... (default 3000)
+REPLICATE_API_TOKEN=... (required)
+PORT=... (default 3000)
 ```
 
 Then open the project directory in your terminal and run the app:
